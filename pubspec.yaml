@@ -2,7 +2,19 @@ name: "flutterwave"
 description: "Flutterwave official flutter library to accept payment via card, USSD, Mobile Money etc."
 version: 1.0.0
 homepage: "https://github.com/Flutterwave/flutterwave-flutter"
-
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutterwave
+        pluginClass: FlutterwavePlugin
+      ios:
+        pluginClass: FlutterwavePlugin
+      macos:
+        pluginClass: FlutterwavePlugin
+      web:
+        pluginClass: HelloPlugin
+        fileName: flutterwave_web.dart
 environment:
   sdk: ">=2.12.0-0 <3.0.0"
   flutter: ">=1.17.0"
